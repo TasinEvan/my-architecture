@@ -20,31 +20,34 @@
     font-size: 1rem;
     font-weight: 400;
     margin: 20px auto;
-    
-}
-.btn-primary{
-    border-radius: 8px;
-background: #FF900E;
-color: #FFF;
-font-size: 1rem;
-font-style: normal;
-font-weight: 600;
-width: 160px;
-height: 50px;
-border: none;
-margin-top: 20px;
 
 }
-.btn-primary:hover{
+
+.btn-primary {
+    border-radius: 8px;
+    background: #FF900E;
+    color: #FFF;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 600;
+    width: 160px;
+    height: 50px;
+    border: none;
+    margin-top: 20px;
+
+}
+
+.btn-primary:hover {
     background-color: #f0110d;
 }
+
 /* header styles */
 header {
     background-color: rgba(255, 144, 14, 0.10);
     padding: 50px 150px;
-   
-    
-   
+
+
+
 }
 
 
@@ -53,10 +56,10 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-  
+
 }
-    
-    
+
+
 
 nav>ul {
     display: flex;
@@ -79,19 +82,20 @@ nav li a {
 .header-container {
 
 
-   max-width:  1050px;
-   width: 100%;
+    max-width: 1050px;
+    width: 100%;
     text-align: center;
     margin-top: 80px;
     margin-bottom: 30px;
-    
+
 }
 
 .header-container p {
-padding-top: 10px;
-padding-bottom: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
-.header-container img{
+
+.header-container img {
     width: 100%;
     margin-top: 10px;
 }
@@ -99,41 +103,130 @@ padding-bottom: 10px;
 
 
 /* team styles */
-main .team-content{
+main .team-content {
     max-width: 900px;
-    width:100%;
+    width: 100%;
     margin: 130px auto;
 }
-.team-content{
-    
+
+.team-content {
+
     display: flex;
-   align-items: center;
-   gap: 60px;
-   
-}
-.team-container {
-    display: grid;
-    grid-template-columns:repeat(2,1fr);
-    gap: 15px;
-   
+    align-items: center;
+    gap: 60px;
 
 }
-.team-container img{
+
+.team-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+
+
+}
+
+.team-container img {
     width: 100%;
 }
-.team-content .team-item{
+
+.team-content .team-item {
     width: 50%;
 
 }
-.team-content .team-item .Quick{
-    color:#727272 ;
+
+.team-content .team-item .Quick {
+    color: #727272;
     font-weight: 500;
-    
+
 }
-.team-content .team-item .Feature{
+
+.team-content .team-item .Feature {
     color: #FF900E;
+
+}
+
+/* feature relateted  */
+
+main .feature-container {
+
+    max-width: 1050px;
+    width: 100%;
+    margin: 50px auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 100px;
+}
+
+.feature {
+    width: calc((100% - 100px) / 2);
+}
+
+
+.feature-container .title {
+    border-left: 5px solid #FF900E;
+    padding-left: 15px;
+    margin-bottom: 0px;
+
+}
+
+.feature-container .card {
+    border-radius: 8px;
+    background: #FFF;
+
+    box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.06);
+    margin-left: 30px;
+
+}
+
+.feature-container .card p {
+    margin-top: 10px;
+}
+
+.feature-container img {
+    max-width: 900px;
+    width: 100%;
+}
+
+.year {
+    width: 220px;
+    height: 100px;
+    background-color: #FF900E;
+    border-radius: 8px;
+    padding: 20px;
+    position: relative;
+    top: -100px;
+    left: -70px;
     
 }
+.year h1{
+    color: #FFF;
+
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 650;
+    margin: 0px;
+    
+
+   
+}
+
+.experience {
+    font-size: 1.4rem;
+    font-weight: 400;
+    margin: 0px;
+}
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -144,45 +237,55 @@ main .team-content{
 
 /* responsive small device  */
 @media screen and (max-width:576px) {
-    header{
+    header {
         padding: 5px 20px;
     }
-    nav{
-        flex-direction: column;
-    
-    }
-    nav >ul{
-        margin-top: 20px;
-    }
-    .team-content{
+
+    nav {
         flex-direction: column;
 
     }
-    .team-container{
+
+    nav>ul {
+        margin-top: 20px;
+    }
+
+    .team-content {
+        flex-direction: column;
+
+    }
+
+    .team-container {
         grid-template-columns: 1fr;
     }
-    .team-content .team-item{
+
+    .team-content .team-item {
         width: 100%;
         margin-top: 30px;
     }
 }
+
 /* responjsive medium device */
 @media screen and (min-width:576px) and (max-width:960px) {
-    header{
+    header {
         padding: 5px 20px;
     }
-    nav{
-        flex-direction: column;
-}
-nav >ul{
-    margin-top: 20px;
-}
-team-content .team-item{
-    width: 100%;
-    margin-top: 30px;
-}
-.team-content{
-    flex-direction: column;
 
-}
+    nav {
+        flex-direction: column;
+    }
+
+    nav>ul {
+        margin-top: 20px;
+    }
+
+    team-content .team-item {
+        width: 100%;
+        margin-top: 30px;
+    }
+
+    .team-content {
+        flex-direction: column;
+
+    }
 }
