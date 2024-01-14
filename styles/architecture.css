@@ -125,6 +125,15 @@ main .team-content{
     width: 50%;
 
 }
+.team-content .team-item .Quick{
+    color:#727272 ;
+    font-weight: 500;
+    
+}
+.team-content .team-item .Feature{
+    color: #FF900E;
+    
+}
 
 
 
@@ -145,6 +154,17 @@ main .team-content{
     nav >ul{
         margin-top: 20px;
     }
+    .team-content{
+        flex-direction: column;
+
+    }
+    .team-container{
+        grid-template-columns: 1fr;
+    }
+    .team-content .team-item{
+        width: 100%;
+        margin-top: 30px;
+    }
 }
 /* responjsive medium device */
 @media screen and (min-width:576px) and (max-width:960px) {
@@ -156,5 +176,13 @@ main .team-content{
 }
 nav >ul{
     margin-top: 20px;
+}
+team-content .team-item{
+    width: 100%;
+    margin-top: 30px;
+}
+.team-content{
+    flex-direction: column;
+
 }
 }
